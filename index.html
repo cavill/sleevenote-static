@@ -1,0 +1,110 @@
+<!--
+MMMMMDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDMMMMMM
+MMMDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDMMMM
+MDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDMM
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDM
+NNNNNNNNNNNNNNNNNNNNNDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDNNNNNNNM
+NNNNNNNNNNNNNNNNNNNNNDDDDDDDDDDDDDDDDDDDDDD8D$   DDNNNNNNNNN
+NNNNNNNNNNNNNNNNNNNNDDDDDD$                      DDNNNNNNNNN
+NNNNNNNNNNNNNNNNNNNND                            DDNNNNNNNNN
+NNNNNNNNNNNNNNNNNNNND                            DDNNNNNNNNN
+MMMMMMMMMMMMMMMMNNNND                            DNNNNMMMMMM
+MMMMMMMMMMMMMMMMMNNND                            DNNNMMMMMMM
+MMMMMMMMMMMMMMMMMNNND                            DNNNMMMMMMM
+MMMMMMMMMMMMMMMMMMNNN                            NNNMMMMMMMM
+MMMMMMMMMMMMMMMMMMNNN                            NNNMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMMNNN                            NNMMMMMMMMM
+MMMMMMMMMMMMMMMMMNNNN                       =NNNNNNMMMMMMMMM
+MMMMMMMMMMMMMMMMNNNND    DDDDDDDDDNNNNNNNNNNNNNNNNMMMMMMMMMM
+MMMMMMMMMMMMNNNNNNNDD   DDDNNNNNNNNNNNNNNNNNNNNNNMMMMMMMMMMM
+MMMMMMNNNNNNNNNNNDDDD   DDNNNNNNNNNNNNNNNNNNNNNNNNNNMMMMMMMM
+NNNNNNNNNNNNDDDDDDDD8   DDNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+NNNNNNNNNNDD            DDNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+NNNNNNNNDD              DDNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+NNNNNNNDDD              DDDNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+NNNNNNDDDD            8DDDDDNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
+DDDDDDDDDDDD8      88DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+DDDDDDDDDDDDDD8888DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDM
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDM
+MDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDMM
+MMMDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDMMMM
+MMMMM8888888888888888888888888888888888888888888888888MMMMMM
+MMMMMMMMM88888888888888888888888888888888888888888MMMMMMMMMM
+-->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sleevenote cover search</title>
+        <link rel="icon" type="image/png" href="favicon_32x32.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://www.parsecdn.com/js/parse-1.2.12.min.js"></script>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <link href="public/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="public/css/animate.min.css" rel="stylesheet" type="text/css" media="all"/>
+    </head>
+    <body>
+        <div id="wrap"><!-- for footer -->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-sm-1 col-1 col-lg-1">
+          <a class="navbar-brand animated flipInY" href="index.html"><img src="public/img/note_white.svg"></a>
+        </div>
+        <div class="col-xs-10 col-sm-11 col-11 col-lg-11">
+          <form id="albumSearch">
+              <div class="input-group">
+                <input type="text" id="search" placeholder="Search album or artist" value="" class="input-lg col-xs-12 form-control search-box" autocomplete="off" autofocus>
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default btn-lg search-btn"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div>
+            <div class="container album-content">
+                <noscript>
+                    Javascipt is a requirement for this app. Please ensure it is turned on and refresh the page.
+                </noscript>
+                    
+	<div class="alert alert-info hidden no-results animated fadeIn">Looks like we don't have that in the database yet. (Rights owner? <a href="mailto:hello@sleevenote.info" title="hello@sleevenote.info">Contact us</a>).</div>
+	<div class="row albums"></div>
+
+            </div>
+        </div>
+
+        <footer class="clearfix">
+            <div class="container">
+                <button class="btn btn-large btn-lg btn-block btn-default load-more"><span>All albums loaded</span></button>
+                <div class="row">
+                    <div class="col-xs-10 col-6 col-sm-6 col-lg-6">
+                        <p class="copyright">&copy; <a href="http://sleevenote.info">Sleevenote</a>
+                        <span class="muted">Site by @<a href="http://twitter.com/tomcavill">tomcavill</a></span></p>
+                    </div>
+                    <div class="col-xs-2 col-6 col-sm-6 col-lg-6">
+                        <p class="pull-right">
+                            <a href="https://itunes.apple.com/gb/app/id527862161?mt=8&affId=2221336" title="Sleevenote on the Apple App Store">
+                                <img src="public/img/appstore.svg">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- <script src="public/js/dom.min.js"></script> -->
+        <script src="public/js/app.min.js"></script>
+        <script src="public/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

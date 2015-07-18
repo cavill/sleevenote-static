@@ -1,0 +1,101 @@
+.flip img {
+    max-width: 100%;
+}
+
+.card {
+    -webkit-perspective: 1200;
+    -moz-perspective: 1200;
+    -ms-perspective: 1200;
+    perspective: 1200;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -200px;*/
+
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.flip {
+    position: absolute;
+}
+
+.card, .flip {
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function:linear;
+    -webkit-backface-visibility: hidden;
+
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function:linear;
+    -moz-backface-visibility: hidden;
+
+    -ms-animation-duration: 10s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function:linear;
+    -ms-backface-visibility: hidden;
+
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    backface-visibility: hidden;
+    
+    height: 400px;
+    width: 400px;
+}
+
+@-webkit-keyframes flip1 {
+    from { -webkit-transform: rotateY(0deg); }
+    to { -webkit-transform: rotateY(360deg); }
+}
+
+@-moz-keyframes flip1 {
+    from { -moz-transform: rotateY(0deg); }
+    to { -moz-transform: rotateY(360deg); }
+}
+
+@-ms-keyframes flip1 {
+    from { -ms-transform: rotateY(0deg); }
+    to { -ms-transform: rotateY(360deg); }
+}
+
+@keyframes flip1 {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+div.flip1 {
+    -webkit-animation-name: flip1;
+    -moz-animation-name: flip1;
+    -ms-animation-name: flip1;
+    animation-name: flip1;
+}
+
+@-webkit-keyframes flip2 {
+    from { -webkit-transform: rotateY(-180deg); }
+    to { -webkit-transform: rotateY(180deg); }
+}
+
+@-moz-keyframes flip2 {
+    from { -moz-transform: rotateY(-180deg); }
+    to { -moz-transform: rotateY(180deg); }
+}
+
+@-ms-keyframes flip2 {
+    from { -ms-transform: rotateY(-180deg); }
+    to { -ms-transform: rotateY(180deg); }
+}
+
+@keyframes flip2 {
+    from { transform: rotateY(-180deg); }
+    to { transform: rotateY(180deg); }
+}
+
+div.flip2 {
+    -webkit-animation-name: flip2;
+    -moz-animation-name: flip2;
+    -ms-animation-name: flip2;
+    animation-name: flip2;
+}

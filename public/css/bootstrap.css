@@ -1,0 +1,5255 @@
+/* [less, public/css, bootstrap.less] */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* line 11, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/* line 30, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+/* line 41, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/* line 51, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+[hidden],
+template {
+  display: none;
+}
+/* line 66, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/* line 76, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+body {
+  margin: 0;
+}
+/* line 88, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+a {
+  background: transparent;
+}
+/* line 96, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+a:focus {
+  outline: thin dotted;
+}
+/* line 104, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* line 118, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* line 127, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/* line 135, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+b,
+strong {
+  font-weight: bold;
+}
+/* line 144, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+dfn {
+  font-style: italic;
+}
+/* line 152, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/* line 162, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/* line 171, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/* line 183, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+pre {
+  white-space: pre-wrap;
+}
+/* line 191, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/* line 199, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+small {
+  font-size: 80%;
+}
+/* line 207, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 215, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+sup {
+  top: -0.5em;
+}
+/* line 219, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+sub {
+  bottom: -0.25em;
+}
+/* line 231, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+img {
+  border: 0;
+}
+/* line 239, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* line 251, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+figure {
+  margin: 0;
+}
+/* line 263, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/* line 274, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+legend {
+  border: 0;
+  padding: 0;
+}
+/* line 285, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+/* line 299, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+button,
+input {
+  line-height: normal;
+}
+/* line 311, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+button,
+select {
+  text-transform: none;
+}
+/* line 324, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+/* line 336, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/* line 346, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+/* line 358, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 370, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* line 379, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* line 390, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* line 403, /Users/tomcavill/Dropbox/sleevenote/public/css/less/normalize.less */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 8, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 17, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 22, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+body {
+  font-family: Roboto, 'Helvetica Light', 'Helvetica Thin', 'Arial Light', 'Helvetica Neue Light', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #ffffff;
+  background-color: #202020;
+}
+/* line 31, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+/* line 43, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 47, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+a:hover,
+a:focus {
+  color: #d9d9d9;
+  text-decoration: underline;
+}
+/* line 53, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+a:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 61, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+img {
+  vertical-align: middle;
+}
+/* line 66, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* line 71, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+.img-rounded {
+  border-radius: 6px;
+}
+/* line 78, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #202020;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+/* line 91, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+.img-circle {
+  border-radius: 50%;
+}
+/* line 98, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+hr {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+/* line 110, /Users/tomcavill/Dropbox/sleevenote/public/css/less/scaffolding.less */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/* line 9, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+p {
+  margin: 0 0 11px;
+}
+/* line 12, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.lead {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  /* line 18, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+  .lead {
+    font-size: 24px;
+  }
+}
+/* line 28, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+small,
+.small {
+  font-size: 85%;
+}
+/* line 32, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+cite {
+  font-style: normal;
+}
+/* line 35, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-muted {
+  color: #999999;
+}
+/* line 38, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-primary {
+  color: #ffffff;
+}
+/* line 40, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-primary:hover {
+  color: #e6e6e6;
+}
+/* line 44, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-warning {
+  color: #c09853;
+}
+/* line 46, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-warning:hover {
+  color: #a47e3c;
+}
+/* line 50, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-danger {
+  color: #b94a48;
+}
+/* line 52, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-danger:hover {
+  color: #953b39;
+}
+/* line 56, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-success {
+  color: #468847;
+}
+/* line 58, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-success:hover {
+  color: #356635;
+}
+/* line 62, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-info {
+  color: #3a87ad;
+}
+/* line 64, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-info:hover {
+  color: #2d6987;
+}
+/* line 70, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-left {
+  text-align: left;
+}
+/* line 71, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-right {
+  text-align: right;
+}
+/* line 72, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.text-center {
+  text-align: center;
+}
+/* line 78, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Roboto, 'Helvetica Light', 'Helvetica Thin', 'Arial Light', 'Helvetica Neue Light', Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+/* line 85, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small,
+h1 .small,
+h2 .small,
+h3 .small,
+h4 .small,
+h5 .small,
+h6 .small,
+.h1 .small,
+.h2 .small,
+.h3 .small,
+.h4 .small,
+.h5 .small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+/* line 93, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h1,
+h2,
+h3 {
+  margin-top: 22px;
+  margin-bottom: 11px;
+}
+/* line 99, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h1 small,
+h2 small,
+h3 small,
+h1 .small,
+h2 .small,
+h3 .small {
+  font-size: 65%;
+}
+/* line 104, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h4,
+h5,
+h6 {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+/* line 110, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h4 small,
+h5 small,
+h6 small,
+h4 .small,
+h5 .small,
+h6 .small {
+  font-size: 75%;
+}
+/* line 116, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h1,
+.h1 {
+  font-size: 41px;
+}
+/* line 117, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h2,
+.h2 {
+  font-size: 34px;
+}
+/* line 118, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h3,
+.h3 {
+  font-size: 28px;
+}
+/* line 119, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h4,
+.h4 {
+  font-size: 20px;
+}
+/* line 120, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h5,
+.h5 {
+  font-size: 16px;
+}
+/* line 121, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+h6,
+.h6 {
+  font-size: 14px;
+}
+/* line 127, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.page-header {
+  padding-bottom: 10px;
+  margin: 44px 0 22px;
+  border-bottom: 1px solid #eeeeee;
+}
+/* line 139, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+/* line 143, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+/* line 152, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+/* line 158, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+/* line 161, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 166, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+.list-inline > li:first-child {
+  padding-left: 0;
+}
+/* line 173, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+dl {
+  margin-bottom: 22px;
+}
+/* line 176, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+dt,
+dd {
+  line-height: 1.428571429;
+}
+/* line 180, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+dt {
+  font-weight: bold;
+}
+/* line 183, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+dd {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  /* line 194, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  /* line 201, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+  .dl-horizontal dd {
+    margin-left: 180px;
+  }
+  /* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .dl-horizontal dd:before,
+  .dl-horizontal dd:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  /* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .dl-horizontal dd:after {
+    clear: both;
+  }
+  /* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .dl-horizontal dd:before,
+  .dl-horizontal dd:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+  }
+  /* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .dl-horizontal dd:after {
+    clear: both;
+  }
+}
+/* line 212, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+/* line 218, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+/* line 224, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote {
+  padding: 11px 22px;
+  margin: 0 0 22px;
+  border-left: 5px solid #eeeeee;
+}
+/* line 228, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+/* line 233, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+/* line 236, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote small {
+  display: block;
+  line-height: 1.428571429;
+  color: #999999;
+}
+/* line 240, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote small:before {
+  content: '\2014 \00A0';
+}
+/* line 246, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+}
+/* line 251, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote.pull-right p,
+blockquote.pull-right small,
+blockquote.pull-right .small {
+  text-align: right;
+}
+/* line 258, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote.pull-right small:before,
+blockquote.pull-right .small:before {
+  content: '';
+}
+/* line 261, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote.pull-right small:after,
+blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+/* line 269, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+/* line 275, /Users/tomcavill/Dropbox/sleevenote/public/css/less/type.less */
+address {
+  margin-bottom: 22px;
+  font-style: normal;
+  line-height: 1.428571429;
+}
+/* line 7, /Users/tomcavill/Dropbox/sleevenote/public/css/less/code.less */
+code,
+kbd,
+pre,
+samp {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+/* line 15, /Users/tomcavill/Dropbox/sleevenote/public/css/less/code.less */
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/code.less */
+pre {
+  display: block;
+  padding: 10.5px;
+  margin: 0 0 11px;
+  font-size: 15px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+/* line 39, /Users/tomcavill/Dropbox/sleevenote/public/css/less/code.less */
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* line 50, /Users/tomcavill/Dropbox/sleevenote/public/css/less/code.less */
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+/* line 6, /Users/tomcavill/Dropbox/sleevenote/public/css/less/grid.less */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.container:before,
+.container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.container:after {
+  clear: both;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.container:before,
+.container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.container:after {
+  clear: both;
+}
+/* line 11, /Users/tomcavill/Dropbox/sleevenote/public/css/less/grid.less */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.row:before,
+.row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.row:after {
+  clear: both;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.row:before,
+.row:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.row:after {
+  clear: both;
+}
+/* line 724, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 746, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11 {
+  float: left;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-12 {
+  width: 100%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-11 {
+  width: 91.66666666666666%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-10 {
+  width: 83.33333333333334%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-9 {
+  width: 75%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-8 {
+  width: 66.66666666666666%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-7 {
+  width: 58.333333333333336%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-6 {
+  width: 50%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-5 {
+  width: 41.66666666666667%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-4 {
+  width: 33.33333333333333%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-3 {
+  width: 25%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-2 {
+  width: 16.666666666666664%;
+}
+/* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-1 {
+  width: 8.333333333333332%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-12 {
+  right: 100%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-11 {
+  right: 91.66666666666666%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-10 {
+  right: 83.33333333333334%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-9 {
+  right: 75%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-8 {
+  right: 66.66666666666666%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-7 {
+  right: 58.333333333333336%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-6 {
+  right: 50%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-5 {
+  right: 41.66666666666667%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-4 {
+  right: 33.33333333333333%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-3 {
+  right: 25%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-2 {
+  right: 16.666666666666664%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-1 {
+  right: 8.333333333333332%;
+}
+/* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-pull-0 {
+  right: 0%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-12 {
+  left: 100%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-11 {
+  left: 91.66666666666666%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-10 {
+  left: 83.33333333333334%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-9 {
+  left: 75%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-8 {
+  left: 66.66666666666666%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-7 {
+  left: 58.333333333333336%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-6 {
+  left: 50%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-5 {
+  left: 41.66666666666667%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-4 {
+  left: 33.33333333333333%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-3 {
+  left: 25%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-2 {
+  left: 16.666666666666664%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-1 {
+  left: 8.333333333333332%;
+}
+/* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-push-0 {
+  left: 0%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-11 {
+  margin-left: 91.66666666666666%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-10 {
+  margin-left: 83.33333333333334%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-8 {
+  margin-left: 66.66666666666666%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-7 {
+  margin-left: 58.333333333333336%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-5 {
+  margin-left: 41.66666666666667%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-4 {
+  margin-left: 33.33333333333333%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-2 {
+  margin-left: 16.666666666666664%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-1 {
+  margin-left: 8.333333333333332%;
+}
+/* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  /* line 43, /Users/tomcavill/Dropbox/sleevenote/public/css/less/grid.less */
+  .container {
+    width: 750px;
+  }
+  /* line 746, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
+    float: left;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-12 {
+    width: 100%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-11 {
+    width: 91.66666666666666%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-10 {
+    width: 83.33333333333334%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-9 {
+    width: 75%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-8 {
+    width: 66.66666666666666%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-7 {
+    width: 58.333333333333336%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-6 {
+    width: 50%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-5 {
+    width: 41.66666666666667%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-4 {
+    width: 33.33333333333333%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-3 {
+    width: 25%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-2 {
+    width: 16.666666666666664%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-1 {
+    width: 8.333333333333332%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-11 {
+    right: 91.66666666666666%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-10 {
+    right: 83.33333333333334%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-8 {
+    right: 66.66666666666666%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-7 {
+    right: 58.333333333333336%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-5 {
+    right: 41.66666666666667%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-4 {
+    right: 33.33333333333333%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-2 {
+    right: 16.666666666666664%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-1 {
+    right: 8.333333333333332%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-pull-0 {
+    right: 0%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-11 {
+    left: 91.66666666666666%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-10 {
+    left: 83.33333333333334%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-8 {
+    left: 66.66666666666666%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-7 {
+    left: 58.333333333333336%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-5 {
+    left: 41.66666666666667%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-4 {
+    left: 33.33333333333333%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-2 {
+    left: 16.666666666666664%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-1 {
+    left: 8.333333333333332%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-push-0 {
+    left: 0%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 63, /Users/tomcavill/Dropbox/sleevenote/public/css/less/grid.less */
+  .container {
+    width: 970px;
+  }
+  /* line 746, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+    float: left;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-12 {
+    width: 100%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-11 {
+    width: 91.66666666666666%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-10 {
+    width: 83.33333333333334%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-9 {
+    width: 75%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-8 {
+    width: 66.66666666666666%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-7 {
+    width: 58.333333333333336%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-6 {
+    width: 50%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-5 {
+    width: 41.66666666666667%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-4 {
+    width: 33.33333333333333%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-3 {
+    width: 25%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-2 {
+    width: 16.666666666666664%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-1 {
+    width: 8.333333333333332%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-11 {
+    right: 91.66666666666666%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-10 {
+    right: 83.33333333333334%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-8 {
+    right: 66.66666666666666%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-7 {
+    right: 58.333333333333336%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-5 {
+    right: 41.66666666666667%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-4 {
+    right: 33.33333333333333%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-2 {
+    right: 16.666666666666664%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-1 {
+    right: 8.333333333333332%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-pull-0 {
+    right: 0%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-12 {
+    left: 100%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-11 {
+    left: 91.66666666666666%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-10 {
+    left: 83.33333333333334%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-9 {
+    left: 75%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-8 {
+    left: 66.66666666666666%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-7 {
+    left: 58.333333333333336%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-6 {
+    left: 50%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-5 {
+    left: 41.66666666666667%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-4 {
+    left: 33.33333333333333%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-3 {
+    left: 25%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-2 {
+    left: 16.666666666666664%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-1 {
+    left: 8.333333333333332%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-push-0 {
+    left: 0%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 83, /Users/tomcavill/Dropbox/sleevenote/public/css/less/grid.less */
+  .container {
+    width: 1170px;
+  }
+  /* line 746, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+    float: left;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-12 {
+    width: 100%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-11 {
+    width: 91.66666666666666%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-10 {
+    width: 83.33333333333334%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-9 {
+    width: 75%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-8 {
+    width: 66.66666666666666%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-7 {
+    width: 58.333333333333336%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-6 {
+    width: 50%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-5 {
+    width: 41.66666666666667%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-4 {
+    width: 33.33333333333333%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-3 {
+    width: 25%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-2 {
+    width: 16.666666666666664%;
+  }
+  /* line 754, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-1 {
+    width: 8.333333333333332%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-11 {
+    right: 91.66666666666666%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-10 {
+    right: 83.33333333333334%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-8 {
+    right: 66.66666666666666%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-7 {
+    right: 58.333333333333336%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-5 {
+    right: 41.66666666666667%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-4 {
+    right: 33.33333333333333%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-2 {
+    right: 16.666666666666664%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-1 {
+    right: 8.333333333333332%;
+  }
+  /* line 764, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-pull-0 {
+    right: 0%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-11 {
+    left: 91.66666666666666%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-10 {
+    left: 83.33333333333334%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-8 {
+    left: 66.66666666666666%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-7 {
+    left: 58.333333333333336%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-5 {
+    left: 41.66666666666667%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-4 {
+    left: 33.33333333333333%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-2 {
+    left: 16.666666666666664%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-1 {
+    left: 8.333333333333332%;
+  }
+  /* line 759, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-push-0 {
+    left: 0%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+  /* line 769, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+/* line 10, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+/* line 16, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 22px;
+  font-size: 24px;
+  line-height: inherit;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 28, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* line 38, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 43, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  /* IE8-9 */
+  line-height: normal;
+}
+/* line 51, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+input[type="file"] {
+  display: block;
+}
+/* line 56, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+select[multiple],
+select[size] {
+  height: auto;
+}
+/* line 62, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+select optgroup {
+  font-size: inherit;
+  font-style: inherit;
+  font-family: inherit;
+}
+/* line 69, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 79, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+/* line 86, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+}
+/* line 118, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+/* line 830, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+/* line 57, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-control:-moz-placeholder {
+  color: #999999;
+}
+/* line 58, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-control::-moz-placeholder {
+  color: #999999;
+}
+/* line 59, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+/* line 60, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+/* line 147, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+/* line 155, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+textarea.form-control {
+  height: auto;
+}
+/* line 166, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.form-group {
+  margin-bottom: 15px;
+}
+/* line 175, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.radio,
+.checkbox {
+  display: block;
+  min-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+/* line 183, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.radio label,
+.checkbox label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+/* line 190, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+/* line 197, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px;
+}
+/* line 203, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.radio-inline,
+.checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+/* line 212, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+/* line 227, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+.radio[disabled],
+.radio-inline[disabled],
+.checkbox[disabled],
+.checkbox-inline[disabled],
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"],
+fieldset[disabled] .radio,
+fieldset[disabled] .radio-inline,
+fieldset[disabled] .checkbox,
+fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
+}
+/* line 234, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.input-sm {
+  height: 33px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+/* line 850, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+select.input-sm {
+  height: 33px;
+  line-height: 33px;
+}
+/* line 855, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+textarea.input-sm {
+  height: auto;
+}
+/* line 238, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.input-lg {
+  height: 48px;
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+/* line 850, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+select.input-lg {
+  height: 48px;
+  line-height: 48px;
+}
+/* line 855, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+textarea.input-lg {
+  height: auto;
+}
+/* line 789, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline {
+  color: #c09853;
+}
+/* line 798, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-warning .form-control {
+  border-color: #c09853;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* line 801, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-warning .form-control:focus {
+  border-color: #a47e3c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+}
+/* line 808, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-warning .input-group-addon {
+  color: #c09853;
+  border-color: #c09853;
+  background-color: #fcf8e3;
+}
+/* line 789, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline {
+  color: #b94a48;
+}
+/* line 798, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-error .form-control {
+  border-color: #b94a48;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* line 801, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-error .form-control:focus {
+  border-color: #953b39;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+/* line 808, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-error .input-group-addon {
+  color: #b94a48;
+  border-color: #b94a48;
+  background-color: #f2dede;
+}
+/* line 789, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline {
+  color: #468847;
+}
+/* line 798, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-success .form-control {
+  border-color: #468847;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+/* line 801, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-success .form-control:focus {
+  border-color: #356635;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+/* line 808, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.has-success .input-group-addon {
+  color: #468847;
+  border-color: #468847;
+  background-color: #dff0d8;
+}
+/* line 266, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.form-control-static {
+  margin-bottom: 0;
+}
+/* line 276, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  /* line 301, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  /* line 308, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .form-inline .form-control {
+    display: inline-block;
+  }
+  /* line 315, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  /* line 322, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+}
+/* line 339, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.form-horizontal .control-label,
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+/* line 350, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.form-horizontal .form-group {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-horizontal .form-group:after {
+  clear: both;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.form-horizontal .form-group:after {
+  clear: both;
+}
+/* line 354, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+.form-horizontal .form-control-static {
+  padding-top: 7px;
+}
+@media (min-width: 768px) {
+  /* line 360, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .form-horizontal .control-label {
+    text-align: right;
+  }
+}
+/* line 10, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 23, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+/* line 27, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 33, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn:active,
+.btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+/* line 40, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 55, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+/* line 468, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+/* line 477, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background-image: none;
+}
+/* line 485, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+/* line 58, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-primary {
+  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #f2f2f2;
+}
+/* line 468, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #ebebeb;
+  border-color: #d4d4d4;
+}
+/* line 477, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+/* line 485, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #ffffff;
+  border-color: #f2f2f2;
+}
+/* line 62, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+/* line 468, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+/* line 477, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+/* line 485, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+/* line 66, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+/* line 468, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #d2322d;
+  border-color: #ac2925;
+}
+/* line 477, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+/* line 485, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+/* line 70, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+/* line 468, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #47a447;
+  border-color: #398439;
+}
+/* line 477, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+/* line 485, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+/* line 74, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+/* line 468, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #39b3d7;
+  border-color: #269abc;
+}
+/* line 477, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  background-image: none;
+}
+/* line 485, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+/* line 83, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-link {
+  color: #ffffff;
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 0;
+}
+/* line 89, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-link,
+.btn-link:active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 96, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+  border-color: transparent;
+}
+/* line 102, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-link:hover,
+.btn-link:focus {
+  color: #d9d9d9;
+  text-decoration: underline;
+  background-color: transparent;
+}
+/* line 110, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link:hover,
+.btn-link[disabled]:focus,
+fieldset[disabled] .btn-link:focus {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 122, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+/* line 126, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-sm,
+.btn-xs {
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+/* line 131, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-xs {
+  padding: 1px 5px;
+}
+/* line 139, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 147, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+/* line 155, /Users/tomcavill/Dropbox/sleevenote/public/css/less/buttons.less */
+input[type="submit"].btn-block,
+input[type="reset"].btn-block,
+input[type="button"].btn-block {
+  width: 100%;
+}
+/* line 10, /Users/tomcavill/Dropbox/sleevenote/public/css/less/component-animations.less */
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+/* line 13, /Users/tomcavill/Dropbox/sleevenote/public/css/less/component-animations.less */
+.fade.in {
+  opacity: 1;
+}
+/* line 18, /Users/tomcavill/Dropbox/sleevenote/public/css/less/component-animations.less */
+.collapse {
+  display: none;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/component-animations.less */
+.collapse.in {
+  display: block;
+}
+/* line 24, /Users/tomcavill/Dropbox/sleevenote/public/css/less/component-animations.less */
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  transition: height 0.35s ease;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+/* line 21, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* line 32, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon:empty {
+  width: 1em;
+}
+/* line 38, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-asterisk:before {
+  content: "\2a";
+}
+/* line 39, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-plus:before {
+  content: "\2b";
+}
+/* line 40, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-euro:before {
+  content: "\20ac";
+}
+/* line 41, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-minus:before {
+  content: "\2212";
+}
+/* line 42, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-cloud:before {
+  content: "\2601";
+}
+/* line 43, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-envelope:before {
+  content: "\2709";
+}
+/* line 44, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-pencil:before {
+  content: "\270f";
+}
+/* line 45, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-glass:before {
+  content: "\e001";
+}
+/* line 46, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-music:before {
+  content: "\e002";
+}
+/* line 47, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-search:before {
+  content: "\e003";
+}
+/* line 48, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-heart:before {
+  content: "\e005";
+}
+/* line 49, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-star:before {
+  content: "\e006";
+}
+/* line 50, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-star-empty:before {
+  content: "\e007";
+}
+/* line 51, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-user:before {
+  content: "\e008";
+}
+/* line 52, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-film:before {
+  content: "\e009";
+}
+/* line 53, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-th-large:before {
+  content: "\e010";
+}
+/* line 54, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-th:before {
+  content: "\e011";
+}
+/* line 55, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-th-list:before {
+  content: "\e012";
+}
+/* line 56, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-ok:before {
+  content: "\e013";
+}
+/* line 57, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-remove:before {
+  content: "\e014";
+}
+/* line 58, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-zoom-in:before {
+  content: "\e015";
+}
+/* line 59, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-zoom-out:before {
+  content: "\e016";
+}
+/* line 60, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-off:before {
+  content: "\e017";
+}
+/* line 61, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-signal:before {
+  content: "\e018";
+}
+/* line 62, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-cog:before {
+  content: "\e019";
+}
+/* line 63, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-trash:before {
+  content: "\e020";
+}
+/* line 64, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-home:before {
+  content: "\e021";
+}
+/* line 65, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-file:before {
+  content: "\e022";
+}
+/* line 66, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-time:before {
+  content: "\e023";
+}
+/* line 67, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-road:before {
+  content: "\e024";
+}
+/* line 68, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-download-alt:before {
+  content: "\e025";
+}
+/* line 69, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-download:before {
+  content: "\e026";
+}
+/* line 70, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-upload:before {
+  content: "\e027";
+}
+/* line 71, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-inbox:before {
+  content: "\e028";
+}
+/* line 72, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-play-circle:before {
+  content: "\e029";
+}
+/* line 73, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-repeat:before {
+  content: "\e030";
+}
+/* line 74, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-refresh:before {
+  content: "\e031";
+}
+/* line 75, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-list-alt:before {
+  content: "\e032";
+}
+/* line 76, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-lock:before {
+  content: "\e033";
+}
+/* line 77, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-flag:before {
+  content: "\e034";
+}
+/* line 78, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-headphones:before {
+  content: "\e035";
+}
+/* line 79, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-volume-off:before {
+  content: "\e036";
+}
+/* line 80, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-volume-down:before {
+  content: "\e037";
+}
+/* line 81, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-volume-up:before {
+  content: "\e038";
+}
+/* line 82, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-qrcode:before {
+  content: "\e039";
+}
+/* line 83, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-barcode:before {
+  content: "\e040";
+}
+/* line 84, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-tag:before {
+  content: "\e041";
+}
+/* line 85, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-tags:before {
+  content: "\e042";
+}
+/* line 86, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-book:before {
+  content: "\e043";
+}
+/* line 87, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-bookmark:before {
+  content: "\e044";
+}
+/* line 88, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-print:before {
+  content: "\e045";
+}
+/* line 89, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-camera:before {
+  content: "\e046";
+}
+/* line 90, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-font:before {
+  content: "\e047";
+}
+/* line 91, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-bold:before {
+  content: "\e048";
+}
+/* line 92, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-italic:before {
+  content: "\e049";
+}
+/* line 93, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-text-height:before {
+  content: "\e050";
+}
+/* line 94, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-text-width:before {
+  content: "\e051";
+}
+/* line 95, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-align-left:before {
+  content: "\e052";
+}
+/* line 96, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-align-center:before {
+  content: "\e053";
+}
+/* line 97, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-align-right:before {
+  content: "\e054";
+}
+/* line 98, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-align-justify:before {
+  content: "\e055";
+}
+/* line 99, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-list:before {
+  content: "\e056";
+}
+/* line 100, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-indent-left:before {
+  content: "\e057";
+}
+/* line 101, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-indent-right:before {
+  content: "\e058";
+}
+/* line 102, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-facetime-video:before {
+  content: "\e059";
+}
+/* line 103, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-picture:before {
+  content: "\e060";
+}
+/* line 104, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-map-marker:before {
+  content: "\e062";
+}
+/* line 105, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-adjust:before {
+  content: "\e063";
+}
+/* line 106, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-tint:before {
+  content: "\e064";
+}
+/* line 107, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-edit:before {
+  content: "\e065";
+}
+/* line 108, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-share:before {
+  content: "\e066";
+}
+/* line 109, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-check:before {
+  content: "\e067";
+}
+/* line 110, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-move:before {
+  content: "\e068";
+}
+/* line 111, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-step-backward:before {
+  content: "\e069";
+}
+/* line 112, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-fast-backward:before {
+  content: "\e070";
+}
+/* line 113, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-backward:before {
+  content: "\e071";
+}
+/* line 114, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-play:before {
+  content: "\e072";
+}
+/* line 115, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-pause:before {
+  content: "\e073";
+}
+/* line 116, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-stop:before {
+  content: "\e074";
+}
+/* line 117, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-forward:before {
+  content: "\e075";
+}
+/* line 118, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-fast-forward:before {
+  content: "\e076";
+}
+/* line 119, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-step-forward:before {
+  content: "\e077";
+}
+/* line 120, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-eject:before {
+  content: "\e078";
+}
+/* line 121, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-chevron-left:before {
+  content: "\e079";
+}
+/* line 122, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-chevron-right:before {
+  content: "\e080";
+}
+/* line 123, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-plus-sign:before {
+  content: "\e081";
+}
+/* line 124, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-minus-sign:before {
+  content: "\e082";
+}
+/* line 125, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-remove-sign:before {
+  content: "\e083";
+}
+/* line 126, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-ok-sign:before {
+  content: "\e084";
+}
+/* line 127, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-question-sign:before {
+  content: "\e085";
+}
+/* line 128, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-info-sign:before {
+  content: "\e086";
+}
+/* line 129, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-screenshot:before {
+  content: "\e087";
+}
+/* line 130, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-remove-circle:before {
+  content: "\e088";
+}
+/* line 131, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-ok-circle:before {
+  content: "\e089";
+}
+/* line 132, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-ban-circle:before {
+  content: "\e090";
+}
+/* line 133, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-arrow-left:before {
+  content: "\e091";
+}
+/* line 134, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-arrow-right:before {
+  content: "\e092";
+}
+/* line 135, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-arrow-up:before {
+  content: "\e093";
+}
+/* line 136, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+/* line 137, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-share-alt:before {
+  content: "\e095";
+}
+/* line 138, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-resize-full:before {
+  content: "\e096";
+}
+/* line 139, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-resize-small:before {
+  content: "\e097";
+}
+/* line 140, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+/* line 141, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-gift:before {
+  content: "\e102";
+}
+/* line 142, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-leaf:before {
+  content: "\e103";
+}
+/* line 143, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-fire:before {
+  content: "\e104";
+}
+/* line 144, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+/* line 145, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-eye-close:before {
+  content: "\e106";
+}
+/* line 146, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-warning-sign:before {
+  content: "\e107";
+}
+/* line 147, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-plane:before {
+  content: "\e108";
+}
+/* line 148, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-calendar:before {
+  content: "\e109";
+}
+/* line 149, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-random:before {
+  content: "\e110";
+}
+/* line 150, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-comment:before {
+  content: "\e111";
+}
+/* line 151, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-magnet:before {
+  content: "\e112";
+}
+/* line 152, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-chevron-up:before {
+  content: "\e113";
+}
+/* line 153, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-chevron-down:before {
+  content: "\e114";
+}
+/* line 154, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-retweet:before {
+  content: "\e115";
+}
+/* line 155, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+/* line 156, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-folder-close:before {
+  content: "\e117";
+}
+/* line 157, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-folder-open:before {
+  content: "\e118";
+}
+/* line 158, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+/* line 159, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+/* line 160, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-hdd:before {
+  content: "\e121";
+}
+/* line 161, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-bullhorn:before {
+  content: "\e122";
+}
+/* line 162, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-bell:before {
+  content: "\e123";
+}
+/* line 163, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-certificate:before {
+  content: "\e124";
+}
+/* line 164, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+/* line 165, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+/* line 166, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-hand-right:before {
+  content: "\e127";
+}
+/* line 167, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-hand-left:before {
+  content: "\e128";
+}
+/* line 168, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-hand-up:before {
+  content: "\e129";
+}
+/* line 169, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-hand-down:before {
+  content: "\e130";
+}
+/* line 170, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+/* line 171, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+/* line 172, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+/* line 173, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+/* line 174, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-globe:before {
+  content: "\e135";
+}
+/* line 175, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-wrench:before {
+  content: "\e136";
+}
+/* line 176, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-tasks:before {
+  content: "\e137";
+}
+/* line 177, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-filter:before {
+  content: "\e138";
+}
+/* line 178, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-briefcase:before {
+  content: "\e139";
+}
+/* line 179, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-fullscreen:before {
+  content: "\e140";
+}
+/* line 180, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-dashboard:before {
+  content: "\e141";
+}
+/* line 181, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-paperclip:before {
+  content: "\e142";
+}
+/* line 182, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-heart-empty:before {
+  content: "\e143";
+}
+/* line 183, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-link:before {
+  content: "\e144";
+}
+/* line 184, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-phone:before {
+  content: "\e145";
+}
+/* line 185, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-pushpin:before {
+  content: "\e146";
+}
+/* line 186, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-usd:before {
+  content: "\e148";
+}
+/* line 187, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-gbp:before {
+  content: "\e149";
+}
+/* line 188, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sort:before {
+  content: "\e150";
+}
+/* line 189, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+/* line 190, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+/* line 191, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+/* line 192, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+/* line 193, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+/* line 194, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+/* line 195, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-unchecked:before {
+  content: "\e157";
+}
+/* line 196, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-expand:before {
+  content: "\e158";
+}
+/* line 197, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-collapse-down:before {
+  content: "\e159";
+}
+/* line 198, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-collapse-up:before {
+  content: "\e160";
+}
+/* line 199, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-log-in:before {
+  content: "\e161";
+}
+/* line 200, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-flash:before {
+  content: "\e162";
+}
+/* line 201, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-log-out:before {
+  content: "\e163";
+}
+/* line 202, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-new-window:before {
+  content: "\e164";
+}
+/* line 203, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-record:before {
+  content: "\e165";
+}
+/* line 204, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-save:before {
+  content: "\e166";
+}
+/* line 205, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-open:before {
+  content: "\e167";
+}
+/* line 206, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-saved:before {
+  content: "\e168";
+}
+/* line 207, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-import:before {
+  content: "\e169";
+}
+/* line 208, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-export:before {
+  content: "\e170";
+}
+/* line 209, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-send:before {
+  content: "\e171";
+}
+/* line 210, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+/* line 211, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+/* line 212, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+/* line 213, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-floppy-save:before {
+  content: "\e175";
+}
+/* line 214, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-floppy-open:before {
+  content: "\e176";
+}
+/* line 215, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-credit-card:before {
+  content: "\e177";
+}
+/* line 216, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-transfer:before {
+  content: "\e178";
+}
+/* line 217, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-cutlery:before {
+  content: "\e179";
+}
+/* line 218, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-header:before {
+  content: "\e180";
+}
+/* line 219, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-compressed:before {
+  content: "\e181";
+}
+/* line 220, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-earphone:before {
+  content: "\e182";
+}
+/* line 221, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-phone-alt:before {
+  content: "\e183";
+}
+/* line 222, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-tower:before {
+  content: "\e184";
+}
+/* line 223, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-stats:before {
+  content: "\e185";
+}
+/* line 224, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sd-video:before {
+  content: "\e186";
+}
+/* line 225, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-hd-video:before {
+  content: "\e187";
+}
+/* line 226, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-subtitles:before {
+  content: "\e188";
+}
+/* line 227, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+/* line 228, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+/* line 229, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+/* line 230, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+/* line 231, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+/* line 232, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+/* line 233, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-registration-mark:before {
+  content: "\e195";
+}
+/* line 234, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-cloud-download:before {
+  content: "\e197";
+}
+/* line 235, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+/* line 236, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+/* line 237, /Users/tomcavill/Dropbox/sleevenote/public/css/less/glyphicons.less */
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+/* line 7, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+/* line 13, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group.col {
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 19, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group .form-control {
+  width: 100%;
+  margin-bottom: 0;
+}
+/* line 30, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  height: 48px;
+  padding: 10px 16px;
+  font-size: 20px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+/* line 850, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+select.input-group-lg > .form-control,
+select.input-group-lg > .input-group-addon,
+select.input-group-lg > .input-group-btn > .btn {
+  height: 48px;
+  line-height: 48px;
+}
+/* line 855, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+textarea.input-group-lg > .form-control,
+textarea.input-group-lg > .input-group-addon,
+textarea.input-group-lg > .input-group-btn > .btn {
+  height: auto;
+}
+/* line 33, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+  height: 33px;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+/* line 850, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+select.input-group-sm > .form-control,
+select.input-group-sm > .input-group-addon,
+select.input-group-sm > .input-group-btn > .btn {
+  height: 33px;
+  line-height: 33px;
+}
+/* line 855, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+textarea.input-group-sm > .form-control,
+textarea.input-group-sm > .input-group-addon,
+textarea.input-group-sm > .input-group-btn > .btn {
+  height: auto;
+}
+/* line 40, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+/* line 45, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+/* line 50, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+/* line 59, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555555;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+/* line 71, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon.input-sm {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+/* line 76, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon.input-lg {
+  padding: 10px 16px;
+  font-size: 20px;
+  border-radius: 6px;
+}
+/* line 83, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon input[type="radio"],
+.input-group-addon input[type="checkbox"] {
+  margin-top: 0;
+}
+/* line 90, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+/* line 97, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon:first-child {
+  border-right: 0;
+}
+/* line 100, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+/* line 107, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-addon:last-child {
+  border-left: 0;
+}
+/* line 113, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-btn {
+  position: relative;
+  white-space: nowrap;
+}
+/* line 118, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-btn:first-child > .btn {
+  margin-right: -1px;
+}
+/* line 121, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-btn:last-child > .btn {
+  margin-left: -1px;
+}
+/* line 125, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-btn > .btn {
+  position: relative;
+}
+/* line 128, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-btn > .btn + .btn {
+  margin-left: -4px;
+}
+/* line 132, /Users/tomcavill/Dropbox/sleevenote/public/css/less/input-groups.less */
+.input-group-btn > .btn:hover,
+.input-group-btn > .btn:active {
+  z-index: 2;
+}
+/* line 9, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.nav:before,
+.nav:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.nav:after {
+  clear: both;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.nav:before,
+.nav:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.nav:after {
+  clear: both;
+}
+/* line 15, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav > li {
+  position: relative;
+  display: block;
+}
+/* line 19, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+/* line 23, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+/* line 31, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav > li.disabled > a {
+  color: #999999;
+}
+/* line 34, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+/* line 46, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #ffffff;
+}
+/* line 52, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav .open > a .caret,
+.nav .open > a:hover .caret,
+.nav .open > a:focus .caret {
+  border-top-color: #d9d9d9;
+  border-bottom-color: #d9d9d9;
+}
+/* line 64, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav .nav-divider {
+  height: 1px;
+  margin: 10px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+/* line 71, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav > li > a > img {
+  max-width: none;
+}
+/* line 81, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 83, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+/* line 89, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.428571429;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+/* line 94, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+/* line 101, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #202020;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+/* line 113, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs.nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+/* line 173, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs.nav-justified > li {
+  float: none;
+}
+/* line 175, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+/* line 181, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  /* line 187, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  /* line 190, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+/* line 203, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+/* line 209, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+@media (min-width: 768px) {
+  /* line 216, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 4px 4px 0 0;
+  }
+  /* line 220, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #202020;
+  }
+}
+/* line 123, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-pills > li {
+  float: left;
+}
+/* line 127, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-pills > li > a {
+  border-radius: 4px;
+}
+/* line 130, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+/* line 136, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+/* line 142, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-pills > li.active > a .caret,
+.nav-pills > li.active > a:hover .caret,
+.nav-pills > li.active > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+/* line 154, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-stacked > li {
+  float: none;
+}
+/* line 156, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+/* line 170, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-justified {
+  width: 100%;
+}
+/* line 173, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-justified > li {
+  float: none;
+}
+/* line 175, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+/* line 181, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  /* line 187, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  /* line 190, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+/* line 200, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs-justified {
+  border-bottom: 0;
+}
+/* line 203, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+/* line 209, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs-justified > .active > a,
+.nav-tabs-justified > .active > a:hover,
+.nav-tabs-justified > .active > a:focus {
+  border: 1px solid #dddddd;
+}
+@media (min-width: 768px) {
+  /* line 216, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-tabs-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 4px 4px 0 0;
+  }
+  /* line 220, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+  .nav-tabs-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus {
+    border-bottom-color: #202020;
+  }
+}
+/* line 234, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.tab-content > .tab-pane {
+  display: none;
+}
+/* line 237, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.tab-content > .active {
+  display: block;
+}
+/* line 247, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+/* line 251, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav a:hover .caret {
+  border-top-color: #d9d9d9;
+  border-bottom-color: #d9d9d9;
+}
+/* line 257, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navs.less */
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+/* line 11, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar:before,
+.navbar:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar:after {
+  clear: both;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar:before,
+.navbar:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar {
+    border-radius: 4px;
+  }
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-header:before,
+.navbar-header:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-header:after {
+  clear: both;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-header:before,
+.navbar-header:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-header:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 34, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-header {
+    float: left;
+  }
+}
+/* line 50, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-collapse {
+  max-height: 340px;
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-collapse:before,
+.navbar-collapse:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-collapse:after {
+  clear: both;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-collapse:before,
+.navbar-collapse:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.navbar-collapse:after {
+  clear: both;
+}
+/* line 60, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-collapse.in {
+  overflow-y: auto;
+}
+@media (min-width: 768px) {
+  /* line 64, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+  }
+  /* line 69, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  /* line 76, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-collapse.in {
+    overflow-y: auto;
+  }
+  /* line 81, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-collapse .navbar-nav.navbar-left:first-child {
+    margin-left: -15px;
+  }
+  /* line 84, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: -15px;
+  }
+  /* line 87, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-collapse .navbar-text:last-child {
+    margin-right: 0;
+  }
+}
+/* line 98, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.container > .navbar-header,
+.container > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  /* line 103, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .container > .navbar-header,
+  .container > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+/* line 117, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px;
+}
+@media (min-width: 768px) {
+  /* line 121, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-static-top {
+    border-radius: 0;
+  }
+}
+/* line 127, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+@media (min-width: 768px) {
+  /* line 135, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+/* line 139, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+/* line 143, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0;
+}
+/* line 152, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-brand {
+  float: left;
+  padding: 14px 15px;
+  font-size: 20px;
+  line-height: 22px;
+}
+/* line 158, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  /* line 164, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar > .container .navbar-brand {
+    margin-left: -15px;
+  }
+}
+/* line 176, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/* line 187, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+/* line 193, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media (min-width: 768px) {
+  /* line 197, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-toggle {
+    display: none;
+  }
+}
+/* line 208, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-nav {
+  margin: 7px -15px;
+}
+/* line 211, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 22px;
+}
+@media (max-width: 767px) {
+  /* line 219, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+  /* line 227, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px;
+  }
+  /* line 231, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 22px;
+  }
+  /* line 233, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 242, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  /* line 246, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-nav > li {
+    float: left;
+  }
+  /* line 248, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-nav > li > a {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 265, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-left {
+    float: left !important;
+  }
+  /* line 266, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-right {
+    float: right !important;
+  }
+}
+/* line 275, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-form {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 10px 15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+@media (min-width: 768px) {
+  /* line 301, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  /* line 308, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .navbar-form .form-control {
+    display: inline-block;
+  }
+  /* line 315, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .navbar-form .radio,
+  .navbar-form .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  /* line 322, /Users/tomcavill/Dropbox/sleevenote/public/css/less/forms.less */
+  .navbar-form .radio input[type="radio"],
+  .navbar-form .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 288, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-form .form-group {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 297, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-form {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+/* line 312, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+/* line 317, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* line 322, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
+  left: auto;
+  right: 0;
+}
+/* line 333, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-btn {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+/* line 342, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-text {
+  float: left;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+@media (min-width: 768px) {
+  /* line 346, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-text {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+/* line 356, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+/* line 360, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-brand {
+  color: #777777;
+}
+/* line 362, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+/* line 369, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-text {
+  color: #777777;
+}
+/* line 374, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > li > a {
+  color: #777777;
+}
+/* line 377, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
+/* line 384, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #555555;
+  background-color: #e7e7e7;
+}
+/* line 392, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+/* line 401, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-toggle {
+  border-color: #dddddd;
+}
+/* line 403, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+/* line 407, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+/* line 412, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+/* line 420, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #333333;
+  border-bottom-color: #333333;
+}
+/* line 428, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #e7e7e7;
+  color: #555555;
+}
+/* line 433, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+  border-top-color: #555555;
+  border-bottom-color: #555555;
+}
+/* line 439, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+  border-top-color: #777777;
+  border-bottom-color: #777777;
+}
+@media (max-width: 767px) {
+  /* line 448, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777777;
+  }
+  /* line 450, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333333;
+    background-color: transparent;
+  }
+  /* line 457, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555555;
+    background-color: #e7e7e7;
+  }
+  /* line 465, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+/* line 481, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-link {
+  color: #777777;
+}
+/* line 483, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-default .navbar-link:hover {
+  color: #333333;
+}
+/* line 492, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse {
+  background-color: #222222;
+  border-color: #080808;
+}
+/* line 496, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-brand {
+  color: #999999;
+}
+/* line 498, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+/* line 505, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-text {
+  color: #999999;
+}
+/* line 510, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > li > a {
+  color: #999999;
+}
+/* line 513, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+/* line 520, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #080808;
+}
+/* line 528, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444444;
+  background-color: transparent;
+}
+/* line 538, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-toggle {
+  border-color: #333333;
+}
+/* line 540, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333333;
+}
+/* line 544, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+/* line 549, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+/* line 557, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #080808;
+  color: #ffffff;
+}
+/* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+/* line 568, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+/* line 576, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-nav > .open > a .caret,
+.navbar-inverse .navbar-nav > .open > a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+@media (max-width: 767px) {
+  /* line 586, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+  /* line 589, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #999999;
+  }
+  /* line 591, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  /* line 598, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #080808;
+  }
+  /* line 606, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444444;
+    background-color: transparent;
+  }
+}
+/* line 617, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-link {
+  color: #999999;
+}
+/* line 619, /Users/tomcavill/Dropbox/sleevenote/public/css/less/navbar.less */
+.navbar-inverse .navbar-link:hover {
+  color: #ffffff;
+}
+/* line 9, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert {
+  padding: 15px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+/* line 16, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert h4 {
+  margin-top: 0;
+  color: inherit;
+}
+/* line 22, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert .alert-link {
+  font-weight: bold;
+}
+/* line 27, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+/* line 31, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert > p + p {
+  margin-top: 5px;
+}
+/* line 40, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert-dismissable {
+  padding-right: 35px;
+}
+/* line 44, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert-dismissable .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+/* line 56, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+/* line 423, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+/* line 426, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-success .alert-link {
+  color: #356635;
+}
+/* line 59, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+/* line 423, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+/* line 426, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-info .alert-link {
+  color: #2d6987;
+}
+/* line 62, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert-warning {
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #c09853;
+}
+/* line 423, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+/* line 426, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-warning .alert-link {
+  color: #a47e3c;
+}
+/* line 65, /Users/tomcavill/Dropbox/sleevenote/public/css/less/alerts.less */
+.alert-danger {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #b94a48;
+}
+/* line 423, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+/* line 426, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.alert-danger .alert-link {
+  color: #953b39;
+}
+/* line 10, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media,
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+/* line 17, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media,
+.media .media {
+  margin-top: 15px;
+}
+/* line 21, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media:first-child {
+  margin-top: 0;
+}
+/* line 26, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media-object {
+  display: block;
+}
+/* line 31, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media-heading {
+  margin: 0 0 5px;
+}
+/* line 40, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media > .pull-left {
+  margin-right: 10px;
+}
+/* line 43, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media > .pull-right {
+  margin-left: 10px;
+}
+/* line 53, /Users/tomcavill/Dropbox/sleevenote/public/css/less/media.less */
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+/* line 20, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.clearfix:after {
+  clear: both;
+}
+/* line 12, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.pull-right {
+  float: right !important;
+}
+/* line 18, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.pull-left {
+  float: left !important;
+}
+/* line 27, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.hide {
+  display: none !important;
+}
+/* line 30, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.show {
+  display: block !important;
+}
+/* line 33, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.invisible {
+  visibility: hidden;
+}
+/* line 36, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/* line 45, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+/* line 54, /Users/tomcavill/Dropbox/sleevenote/public/css/less/utilities.less */
+.affix {
+  position: fixed;
+}
+@-ms-viewport {
+  width: device-width;
+}
+/* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.visible-xs,
+tr.visible-xs,
+th.visible-xs,
+td.visible-xs {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  /* line 29, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-xs {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 33, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-xs.visible-sm {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-xs.visible-sm {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-xs.visible-sm,
+  td.visible-xs.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 38, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-xs.visible-md {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-xs.visible-md {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-xs.visible-md,
+  td.visible-xs.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 43, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-xs.visible-lg {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-xs.visible-lg {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-xs.visible-lg,
+  td.visible-xs.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.visible-sm,
+tr.visible-sm,
+th.visible-sm,
+td.visible-sm {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  /* line 51, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-sm.visible-xs {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-sm.visible-xs {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-sm.visible-xs,
+  td.visible-sm.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 55, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-sm {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 59, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-sm.visible-md {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-sm.visible-md {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-sm.visible-md,
+  td.visible-sm.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 64, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-sm.visible-lg {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-sm.visible-lg {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-sm.visible-lg,
+  td.visible-sm.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.visible-md,
+tr.visible-md,
+th.visible-md,
+td.visible-md {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  /* line 72, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-md.visible-xs {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-md.visible-xs {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-md.visible-xs,
+  td.visible-md.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 77, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-md.visible-sm {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-md.visible-sm {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-md.visible-sm,
+  td.visible-md.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 81, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-md {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-md {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 85, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-md.visible-lg {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-md.visible-lg {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-md.visible-lg,
+  td.visible-md.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.visible-lg,
+tr.visible-lg,
+th.visible-lg,
+td.visible-lg {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  /* line 93, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-lg.visible-xs {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-lg.visible-xs {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-lg.visible-xs,
+  td.visible-lg.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 98, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-lg.visible-sm {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-lg.visible-sm {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-lg.visible-sm,
+  td.visible-lg.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 103, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-lg.visible-md {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-lg.visible-md {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-lg.visible-md,
+  td.visible-lg.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 107, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-lg {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+/* line 112, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+.hidden-xs {
+  display: block !important;
+}
+/* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+tr.hidden-xs {
+  display: table-row !important;
+}
+/* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+th.hidden-xs,
+td.hidden-xs {
+  display: table-cell !important;
+}
+@media (max-width: 767px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-xs,
+  tr.hidden-xs,
+  th.hidden-xs,
+  td.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-xs.hidden-sm,
+  tr.hidden-xs.hidden-sm,
+  th.hidden-xs.hidden-sm,
+  td.hidden-xs.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-xs.hidden-md,
+  tr.hidden-xs.hidden-md,
+  th.hidden-xs.hidden-md,
+  td.hidden-xs.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-xs.hidden-lg,
+  tr.hidden-xs.hidden-lg,
+  th.hidden-xs.hidden-lg,
+  td.hidden-xs.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 133, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+.hidden-sm {
+  display: block !important;
+}
+/* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+tr.hidden-sm {
+  display: table-row !important;
+}
+/* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+th.hidden-sm,
+td.hidden-sm {
+  display: table-cell !important;
+}
+@media (max-width: 767px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-sm.hidden-xs,
+  tr.hidden-sm.hidden-xs,
+  th.hidden-sm.hidden-xs,
+  td.hidden-sm.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-sm,
+  tr.hidden-sm,
+  th.hidden-sm,
+  td.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-sm.hidden-md,
+  tr.hidden-sm.hidden-md,
+  th.hidden-sm.hidden-md,
+  td.hidden-sm.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-sm.hidden-lg,
+  tr.hidden-sm.hidden-lg,
+  th.hidden-sm.hidden-lg,
+  td.hidden-sm.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 154, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+.hidden-md {
+  display: block !important;
+}
+/* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+tr.hidden-md {
+  display: table-row !important;
+}
+/* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+th.hidden-md,
+td.hidden-md {
+  display: table-cell !important;
+}
+@media (max-width: 767px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-md.hidden-xs,
+  tr.hidden-md.hidden-xs,
+  th.hidden-md.hidden-xs,
+  td.hidden-md.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-md.hidden-sm,
+  tr.hidden-md.hidden-sm,
+  th.hidden-md.hidden-sm,
+  td.hidden-md.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-md,
+  tr.hidden-md,
+  th.hidden-md,
+  td.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-md.hidden-lg,
+  tr.hidden-md.hidden-lg,
+  th.hidden-md.hidden-lg,
+  td.hidden-md.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 175, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+.hidden-lg {
+  display: block !important;
+}
+/* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+tr.hidden-lg {
+  display: table-row !important;
+}
+/* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+th.hidden-lg,
+td.hidden-lg {
+  display: table-cell !important;
+}
+@media (max-width: 767px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-lg.hidden-xs,
+  tr.hidden-lg.hidden-xs,
+  th.hidden-lg.hidden-xs,
+  td.hidden-lg.hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-lg.hidden-sm,
+  tr.hidden-lg.hidden-sm,
+  th.hidden-lg.hidden-sm,
+  td.hidden-lg.hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-lg.hidden-md,
+  tr.hidden-lg.hidden-md,
+  th.hidden-lg.hidden-md,
+  td.hidden-lg.hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-lg,
+  tr.hidden-lg,
+  th.hidden-lg,
+  td.hidden-lg {
+    display: none !important;
+  }
+}
+/* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+.visible-print,
+tr.visible-print,
+th.visible-print,
+td.visible-print {
+  display: none !important;
+}
+@media print {
+  /* line 203, /Users/tomcavill/Dropbox/sleevenote/public/css/less/responsive-utilities.less */
+  .visible-print {
+    display: block !important;
+  }
+  /* line 564, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  tr.visible-print {
+    display: table-row !important;
+  }
+  /* line 565, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+  /* line 570, /Users/tomcavill/Dropbox/sleevenote/public/css/less/mixins.less */
+  .hidden-print,
+  tr.hidden-print,
+  th.hidden-print,
+  td.hidden-print {
+    display: none !important;
+  }
+}
+/* line 4, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.albums {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 8, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.navbar {
+  border: 0;
+  background-color: #202020;
+}
+@media (max-width: 767px) {
+  /* line 11, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .navbar {
+    padding-top: 0.5em;
+  }
+}
+/* line 15, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.navbar-brand {
+  padding-right: 0;
+  padding-bottom: 10px;
+}
+/* line 18, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.navbar-brand:focus {
+  border: 0;
+}
+/* line 21, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.navbar-brand img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  /* line 23, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .navbar-brand img {
+    max-width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 27, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .navbar-brand {
+    padding: 20% 0;
+  }
+}
+@media (max-width: 991px) {
+  /* line 30, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .navbar-brand {
+    margin-right: -15px;
+  }
+}
+/* line 34, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.search-box {
+  height: auto;
+}
+/* line 37, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.search-box,
+.search-btn {
+  background: transparent;
+  border: 0;
+  font-size: 1.2em;
+  padding: 3% 0;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 44, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.search-box:focus,
+.search-btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #ffffff;
+}
+@media (min-width: 992px) {
+  /* line 48, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .search-box,
+  .search-btn {
+    font-size: 1.6em;
+  }
+}
+/* line 52, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.search-btn {
+  color: #ffffff;
+  padding: 0;
+  background-size: 80% 80%;
+}
+/* line 56, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.search-btn:hover,
+.search-btn:active,
+.search-btn:focus {
+  color: #ffffff;
+  background-color: transparent;
+  outline: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+}
+/* line 62, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.search-btn .glyphicon {
+  font-size: 1.4em;
+  padding-right: 0;
+}
+@media (min-width: 992px) {
+  /* line 65, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .search-btn .glyphicon {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 68, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .search-btn .glyphicon {
+    font-size: 2em;
+  }
+}
+@media (max-width: 991px) {
+  /* line 72, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .search-btn {
+    padding: 0.5em 0 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 75, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  .search-btn {
+    padding: 0.2em 0 0;
+  }
+}
+/* line 80, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.flip {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  position: relative;
+  display: block;
+  padding-bottom: 100%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+/* line 88, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.flip .card:hover {
+  -webkit-transform: rotateY(-10deg);
+  -ms-transform: rotateY(-10deg);
+  transform: rotateY(-10deg);
+}
+/* line 91, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.flip .card.flipped {
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+/* line 94, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 101, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.flip .card .album {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100%;
+}
+/* line 111, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+}
+/* line 115, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.flip .card .back {
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  cursor: pointer;
+}
+/* line 119, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.artwork {
+  width: 500px;
+  visibility: hidden;
+  max-width: 100%;
+}
+/* line 125, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.load-more {
+  border: 0;
+  border-radius: 0.2em;
+  margin-bottom: 30px;
+}
+/* line 129, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.load-more:focus {
+  outline: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+}
+/* line 137, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.no-results {
+  background: #000000;
+  color: #999999;
+  border: 0;
+}
+/* line 143, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.copyright {
+  margin: 0;
+}
+/* line 145, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.copyright span {
+  display: block;
+  font-size: 0.8em;
+}
+/* line 152, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+.muted,
+.muted a {
+  color: rgba(255, 255, 255, 0.5);
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+/* line 159, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+/* line 166, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -136px;
+  /* Pad bottom by footer height */
+  padding: 0 0 136px;
+}
+@media (max-width: 991px) {
+  /* line 176, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  #wrap > .container {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 179, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  #wrap > .container {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 182, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+  #wrap > .container {
+    padding-top: 115px;
+  }
+}
+/* Set the fixed height of the footer here */
+/* line 188, /Users/tomcavill/Dropbox/sleevenote/public/css/style.less */
+footer {
+  height: 106px;
+  padding: 0 0 30px;
+}
