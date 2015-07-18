@@ -1,0 +1,1 @@
+# sleevenote-static
